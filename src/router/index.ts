@@ -20,7 +20,17 @@
            requireAuth: true
        },
        component: () => import('@/pages/index.vue')
-   }
+   },
+   {
+         path: '/canvas/present',
+         name: 'Present',
+         meta: {
+             title: 'canvas-present',
+             keepAlive: true,
+             requireAuth: true
+         },
+         component: () => import('@/pages/canvas/present.vue')
+   }
  ]
 
  const router = createRouter({
